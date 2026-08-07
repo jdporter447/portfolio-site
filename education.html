@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Educational Experience</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>Educational Experience</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="professional-experiences.html">Professional Experience</a>
+            <a href="education.html" class="active">Educational Experience</a>
+            <a href="research.html">Research Interests</a>
+            <a href="cv.html">Curriculum Vitae</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <section id="education" class="statement-card">
+                <div class="statement-header">
+                    <h2>Education</h2>
+                </div>
+                <div class="statement-body">
+
+                    <div class="accordion-item">
+                        <button class="accordion-trigger" aria-expanded="false">
+                            <span class="accordion-trigger-text">
+                                <strong>Doctor of Philosophy, Higher Education Administration - Fall 2028</strong>
+                                <i>Kansas State University</i>
+                            </span>
+                            <span class="accordion-icon">▼</span>
+                        </button>
+                        <div class="accordion-panel">
+                            <ul>
+                                <li>EDCEP 932 - Ethical Issues and Pratice in Academic Advising - Summer 2026</li>
+                                <li>EDCEP 923 - Higher Education Law - Spring 2026</li>
+                                <li>EDLEA 938 - Advanced Data Analysis in Qualitative Methods - Spring 2026</li>
+                                <li>EDCEP 925 - Higher Education Finance - Summer 2025</li>
+                                <li>EDCEP 926 - Enrollment Management in Higher Education - Fall 2025</li>
+                                <li>EDCEP 927 - Higher Education Administration - Spring 2025</li>
+                                <li>EDCEP 917 - Experimental Design - Spring 2025</li>
+                                <li>EDCEP 948 - Advanced Student Development Theory - Fall 2024</li>
+                                <li>EDCEP 836 - Interpersonal Relations in Academic Advising - Fall 2026</li>
+                                <li>EDLEA 948 - Data Representation and Writing in Qualitative Research - Fall 2026</li>
+                                <li>EDLEA 839 - Assessment of Academic Advising - Spring 2027</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-trigger" aria-expanded="false">
+                            <span class="accordion-trigger-text">
+                                <strong>Master of Science, Counseling and Student Development - May 2024</strong>
+                                <i>Kansas State University</i>
+                            </span>
+                            <span class="accordion-icon">▼</span>
+                        </button>
+                        <div class="accordion-panel">
+                            <ul>
+                                <li>EDCEP 835 - Foundations in Academic Advising - Spring 2024</li>
+                                <li>ECDCEP 826 - Student Success and Learning in Higher Education - Fall 2023</li>
+                                <li>EDCEP 863 - Trends in Career Development - Spring 2023</li>
+                                <li>EDCEP 818 - Principles in Student Affairs Administration - Spring 2023</li>
+                                <li>EDCEP 812- History and Philosophy in Higher Education - Fall 2022</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-trigger" aria-expanded="false">
+                            <span class="accordion-trigger-text">
+                                <strong>Bachelor of Science, Information Technology - May 2022</strong>
+                                <i>Indiana State University</i>
+                            </span>
+                            <span class="accordion-icon">▼</span>
+                        </button>
+                        <div class="accordion-panel">
+                            <ul>
+                                <li>ECT 403 - Pratical Digital Logic Design - Fall 2021</li>
+                                <li>ECT 437 - Industrial Computer Systems Management - Fall 2021</li>
+                                <li>ECT 375 - Advanced Human-Computer Interaction - Spring 2021</li>
+                                <li>ECT - 232 Digital Computer Circuitry - Fall 2020</li>
+                                <li>ECT - 231 Digital Computer Logic - Spring 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-trigger" aria-expanded="false">
+                            <span class="accordion-trigger-text">
+                                <strong>Graduate Certificates</strong>
+                                <i>Kansas State University</i>
+                            </span>
+                            <span class="accordion-icon">▼</span>
+                        </button>
+                        <div class="accordion-panel">
+                            <ul>
+                                <li>Qualitative Research - Fall 2028</li>
+                                <li>Academic Advising - May 2024</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Jacob Porter 2026.</p>
+            <div class="footer-links">
+                <a href="mailto:jdporter@ksu.edu">jdporter@ksu.edu</a>
+                <span class="footer-divider">|</span>
+                <a href="https://www.linkedin.com/in/jacob-porter123/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const panel = trigger.nextElementSibling;
+                const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+                trigger.setAttribute('aria-expanded', String(!isOpen));
+                panel.style.maxHeight = isOpen ? null : panel.scrollHeight + 'px';
+            });
+        });
+    </script>
+</body>
+</html>

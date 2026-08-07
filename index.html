@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jacob Porter</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1 class="hero-name"> Jacob Porter, M.S.</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="professional-experiences.html">Professional Experience</a>
+            <a href="education.html">Educational Experience</a>
+            <a href="research.html">Research Interests</a>
+            <a href="cv.html">Curriculum Vitae</a>
+        </nav>
+    </header>
+    <main>
+        <div class="profile-section">
+            <img src="headshot.jpg" alt="Headshot" class="headshot" />
+            <div>
+                <section id="statement" class="statement-card">
+                    <div class="statement-header">
+                        <h2>Professional Statement:</h2>
+                    </div>
+                    <div class="statement-body">
+                        <p>I am a student affairs professional with experience in student engagement, residential education, leadership development, and student organization advising. I currently advise more than 450 student organizations at Kansas State University and previously have supported residential communities through Housing and Dining Services at Kansas State University and Residential Life at Indiana State University. I am passionate about fostering student success through community building, belonging, and leadership development.</p>
+                    </div>
+                </section>
+                <section id="presentations" class="statement-card">
+                    <div class="statement-header">
+                        <h2>Professional Presentations:</h2>
+                    </div>
+                    <div class="statement-body">
+                        <p>
+                            Shooting for the Stars: Examining First-Year Residency Requirements - March 2024
+                            <br />
+                            There's No Place Like Home: Student Development Efforts Through On-Campus Housing - April 2023
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <section class="stats-section">
+    <div class="stat-item">
+        <span class="stat-number">450+</span>
+        <span class="stat-label">Student Organizations Advised</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-number">$190K+</span>
+        <span class="stat-label">Annual Student Allocations</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-number">5,700+</span>
+        <span class="stat-label">Attendees at Activities Carnival</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-number">95%</span>
+        <span class="stat-label">Org Training Completion Rate</span>
+    </div>
+</section>
+    </main>
+    
+   <footer>
+    <div class="footer-content">
+        <p>&copy; Jacob Porter 2026.</p>
+        <div class="footer-links">
+            <a href="mailto:jdporter@ksu.edu">jdporter@ksu.edu</a>
+            <span class="footer-divider">|</span>
+            <a href="https://www.linkedin.com/in/jacob-porter123/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const panel = trigger.nextElementSibling;
+                const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+                trigger.setAttribute('aria-expanded', String(!isOpen));
+                panel.style.maxHeight = isOpen ? null : panel.scrollHeight + 'px';
+            });
+        });
+    </script>
+</body>
+</html>

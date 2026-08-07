@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Research Interests</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>Research Interests</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="professional-experiences.html">Professional Experience</a>
+            <a href="education.html">Educational Experience</a>
+            <a href="research.html" class="active">Research Interests</a>
+            <a href="cv.html">Curriculum Vitae</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <section id="research-interests" class="statement-card">
+                <div class="statement-header">
+                    <h2>Research Interests</h2>
+                </div>
+                <div class="statement-body">
+                    <p>My research interests are grounded in the experiences I have had both professionally and personally. For example, I have a professional background in Housing and Residence Life and found a passion for investigating the impact of residency requirements on student belonging, academic success, and financial ability to afford attending school. Coursework and personal experiences have started to develop research interests relating to faculty/staff development, growth, job satisfaction, and burnout. In general, my research interests fall under student development, student belonging, faculty/staff development, and leadership development.</p>
+                </div>
+            </section>
+        </div>
+        <div class="research-sections pipeline">
+            <div class="pipeline-step">
+                <div class="stage-marker">1</div>
+                <section class="statement-card">
+                    <div class="statement-header">
+                        <h2>Completed Research</h2>
+                    </div>
+                    <div class="statement-body">
+                        <p><strong>Shooting for the Stars: Examining First-Year Residency Requirements</strong></p>
+                        <i class="subtitle">Presented: March 2024</i>
+                        <p><strong>There's No Place Like Home: Student Development Efforts Through On-Campus Housing</strong></p>
+                        <i class="subtitle">Presented: April 2023</i>
+                    </div>
+                </section>
+            </div>
+
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-step">
+                <div class="stage-marker">2</div>
+                <section class="statement-card">
+                    <div class="statement-header">
+                        <h2>Research in Progress</h2>
+                    </div>
+                    <div class="statement-body">
+                        <p><strong>Beyond Advising as Teaching: A Relational-Reflective Framework for Connective Advising</strong></p>
+                        <i class="subtitle">25% Complete</i>
+                    </div>
+                </section>
+            </div>
+
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-step">
+                <div class="stage-marker">3</div>
+                <section class="statement-card">
+                    <div class="statement-header">
+                        <h2>Upcoming Research</h2>
+                    </div>
+                    <div class="statement-body">
+                        <p><strong>Paying it Forward: Examining the Impact of Student Advising on Faculty Satisfaction and Retention</strong></p>
+                        <i class="subtitle">Expected Start Date: Fall 2027</i>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Jacob Porter 2026.</p>
+            <div class="footer-links">
+                <a href="mailto:jdporter@ksu.edu">jdporter@ksu.edu</a>
+                <span class="footer-divider">|</span>
+                <a href="https://www.linkedin.com/in/jacob-porter123/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const panel = trigger.nextElementSibling;
+                const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+                trigger.setAttribute('aria-expanded', String(!isOpen));
+                panel.style.maxHeight = isOpen ? null : panel.scrollHeight + 'px';
+            });
+        });
+    </script>
+</body>
+</html>

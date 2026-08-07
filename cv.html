@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>Curriculum Vitae</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="professional-experiences.html">Professional Experience</a>
+            <a href="education.html">Educational Experience</a>
+            <a href="research.html">Research Interests</a>
+            <a href="cv.html" class="active">Curriculum Vitae</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <section id="cv" class="statement-card">
+                <div class="statement-header">
+                    <h2>Curriculum Vitae</h2>
+                </div>
+                <div class="statement-body">
+                    <div class="cv-container">
+                        <iframe src="PorterCV.pdf"></iframe>
+                    </div>
+                    <div class="download-container">
+                        <a class="download-button"
+                           href="PorterCV.pdf"
+                           target="_blank">
+                            Download Curriculum Vitae (PDF)
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+   <footer>
+    <div class="footer-content">
+        <p>&copy; Jacob Porter 2026.</p>
+        <div class="footer-links">
+            <a href="mailto:jdporter@ksu.edu">jdporter@ksu.edu</a>
+            <span class="footer-divider">|</span>
+            <a href="https://www.linkedin.com/in/jacob-porter123/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const panel = trigger.nextElementSibling;
+                const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+                trigger.setAttribute('aria-expanded', String(!isOpen));
+                panel.style.maxHeight = isOpen ? null : panel.scrollHeight + 'px';
+            });
+        });
+    </script>
+</body>
+</html>
