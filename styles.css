@@ -522,6 +522,54 @@ section {
     font-size: 1rem;
 }
 
+/* Latest update line */
+
+.latest-update {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #E5DFD2;
+    font-size: .9rem;
+    color: #7C93AC;
+}
+
+    .latest-update strong {
+        color: #0B3D74;
+    }
+
+/* Skills */
+
+#skills .statement-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.75rem;
+}
+
+.skills-group-title {
+    margin: 0 0 .75rem;
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0B3D74;
+}
+
+.skills-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+    .skills-list li {
+        padding: 6px 12px;
+        background: #F4EFE6;
+        border: 1px solid #7C93AC;
+        border-radius: 8px;
+        font-size: .85rem;
+        color: #2E3A46;
+    }
+
 /* Responsive */
 
 @media (max-width: 900px) {
