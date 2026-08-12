@@ -487,10 +487,10 @@ section {
 }
 
 .headshot {
-    width: clamp(160px, 40vw, 320px);
-    height: clamp(160px, 40vw, 320px);
+    width: clamp(140px, 30vw, 320px);
+    height: clamp(140px, 30vw, 320px);
     object-fit: cover;
-    object-position: center 15%;
+    object-position: center top;
     border-radius: 50%;
     box-shadow: 0 8px 20px rgba(1, 31, 75, .25);
 }
