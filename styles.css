@@ -488,7 +488,9 @@ section {
 
 .headshot {
     width: 320px;
-    height: 320px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 8px 20px rgba(1, 31, 75, .25);
