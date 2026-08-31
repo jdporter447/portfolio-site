@@ -487,10 +487,11 @@ section {
 }
 
 .headshot {
-    width: clamp(140px, 30vw, 320px);
-    height: clamp(140px, 30vw, 320px);
+    width: clamp(160px, 35vw, 320px);
+    height: auto;
+    aspect-ratio: 4 / 5;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 16px;   /* was 50% — swap for a soft rounded-rectangle corner, or use 0 for sharp corners */
     box-shadow: 0 8px 20px rgba(1, 31, 75, .25);
 }
 
